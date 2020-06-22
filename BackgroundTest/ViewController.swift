@@ -1,4 +1,5 @@
 import UIKit
+import RandomBackgroundFramework
 
 class ViewController: UIViewController {
     let labelView: UILabel = {
@@ -40,10 +41,10 @@ class ViewController: UIViewController {
     }
     
     @objc func labelTapped(_ sender: UITapGestureRecognizer) {
-        if (RandomBackground.isFire) {
-            RandomBackground.stop()
+        if (RandomBackgroundFramework.RandomBackground.isFire) {
+            RandomBackgroundFramework.RandomBackground.stop()
         } else {
-            RandomBackground.change(self.view)
+            RandomBackgroundFramework.RandomBackground.change(self.view)
         }
     }
 }
