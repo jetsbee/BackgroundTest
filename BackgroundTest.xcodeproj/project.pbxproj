@@ -14,6 +14,7 @@
 		15B954A424A0719C00CE00CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15B954A224A0719C00CE00CF /* LaunchScreen.storyboard */; };
 		15B954AF24A0719D00CE00CF /* BackgroundTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B954AE24A0719D00CE00CF /* BackgroundTestTests.swift */; };
 		15B954BA24A0719D00CE00CF /* BackgroundTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B954B924A0719D00CE00CF /* BackgroundTestUITests.swift */; };
+		15B9550824A0922D00CE00CF /* RandomBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15B9550724A0922D00CE00CF /* RandomBackground.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		15B954B524A0719D00CE00CF /* BackgroundTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BackgroundTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		15B954B924A0719D00CE00CF /* BackgroundTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTestUITests.swift; sourceTree = "<group>"; };
 		15B954BB24A0719D00CE00CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15B9550724A0922D00CE00CF /* RandomBackground.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomBackground.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		15B9549624A0719A00CE00CF /* BackgroundTest */ = {
 			isa = PBXGroup;
 			children = (
+				15B9550624A0920000CE00CF /* RandomBackground */,
 				15B9549724A0719A00CE00CF /* AppDelegate.swift */,
 				15B9549B24A0719A00CE00CF /* ViewController.swift */,
 				15B9549D24A0719C00CE00CF /* Assets.xcassets */,
@@ -131,6 +134,14 @@
 				15B954BB24A0719D00CE00CF /* Info.plist */,
 			);
 			path = BackgroundTestUITests;
+			sourceTree = "<group>";
+		};
+		15B9550624A0920000CE00CF /* RandomBackground */ = {
+			isa = PBXGroup;
+			children = (
+				15B9550724A0922D00CE00CF /* RandomBackground.swift */,
+			);
+			path = RandomBackground;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15B9550824A0922D00CE00CF /* RandomBackground.swift in Sources */,
 				15B9549824A0719A00CE00CF /* AppDelegate.swift in Sources */,
 				15B9549C24A0719A00CE00CF /* ViewController.swift in Sources */,
 			);

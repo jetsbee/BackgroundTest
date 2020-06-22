@@ -1,7 +1,6 @@
 import UIKit
 
 class ViewController: UIViewController {
-
     let labelView: UILabel = {
         let labelView = UILabel()
         labelView.text = "Hello, world!"
@@ -16,16 +15,17 @@ class ViewController: UIViewController {
         setupViews()
     }
     
-    fileprivate func setupViews() {
+    func setupViews() {
+        setupLabelTap()
         addSubviews()
         constrainSubviews()
     }
     
-    fileprivate func addSubviews() {
+    func addSubviews() {
         view.addSubview(labelView)
     }
     
-    fileprivate func constrainSubviews() {
+    func constrainSubviews() {
         labelView.translatesAutoresizingMaskIntoConstraints = false
         labelView.leftAnchor.constraint(equalTo: view.leftAnchor).isActive = true
         labelView.rightAnchor.constraint(equalTo: view.rightAnchor).isActive = true
@@ -33,6 +33,18 @@ class ViewController: UIViewController {
         labelView.heightAnchor.constraint(equalToConstant: 100).isActive = true
     }
 
-
+    func setupLabelTap() {
+        labelView.isUserInteractionEnabled = true
+        let guestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.labelTapped(_:)))
+        labelView.addGestureRecognizer(guestureRecognizer)
+    }
+    
+    @objc func labelTapped(_ sender: UITapGestureRecognizer) {
+        if (RandomBackground.isFire) {
+            RandomBackground.stop()
+        } else {
+            RandomBackground.change(self.view)
+        }
+    }
 }
 
